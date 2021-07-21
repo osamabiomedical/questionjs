@@ -100,7 +100,8 @@ var q49=new question("q49","The main memory of computer is also called as?",'Har
 var q50=new question("q50","CD-ROM stands for?",'Compact Data Read Only Memory','Compactable Read Only Memory','Compact Disc Read Only Memory',3);
 
 var arrq=[q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15,q16,q17,q18,q19,q20,q21,q22,q23,q24,q25,q26,q27,q28,q29,q30,q31,q32,q33,q34,q35,q36,q37,q38,q39,q40,q41,q42,q43,q44,q45,q46,q47,q48,q49,q50];
-
+var arry2 = [];
+var arry3 = [];
 var arr = [];
 while(arr.length < 10){
     var r = Math.floor(Math.random() * 10) ;
@@ -138,18 +139,33 @@ function result()
 		{
 		
 		trueq+=1;
-		
+		arry3.push(arrq[x]['qnum']);
 		}
 		else{
 		falseq+=1;
-		
+		arry2.push(arrq[x]['qnum']);
 		}
 		
 	}
 	
 	document.getElementById('alert').innerHTML+="true question = "+trueq;
 	document.getElementById('alert').innerHTML+="<br>false question = "+falseq;
-	document.getElementById('alert').innerHTML+="<br><h2>the correct ansours is:</h2><br>"
+	if(falseq>0){
+	  document.getElementById('alert').innerHTML+="<br><h2>false question is:</h2> ";
+	  }
+	  	for(z=0;z<arry2.length;z++){
+      
+	document.getElementById('alert').innerHTML+="<strong>("+arry2[z]+")</strong> AND ";
+}
+	  if(trueq>0){
+	  document.getElementById('alert').innerHTML+="<br><h2>true question is:</h2> ";
+	  }
+	for(z=0;z<arry3.length;z++){
+      
+	document.getElementById('alert').innerHTML+="<strong>("+arry3[z]+")</strong> AND ";
+}
+	
+	document.getElementById('alert').innerHTML+="<br><h2>the all correct ansours is:</h2><br>"
 	for(z=0;z<arrq.length;z++){
       var w=arrq[z]['answernum'];
 	  if(w==1){
