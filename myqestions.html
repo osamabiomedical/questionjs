@@ -1,0 +1,191 @@
+<html>
+
+	<head>
+
+
+	</head>
+<style>
+body{
+padding:100px;
+}
+</style>
+
+	<body>
+	
+	<div id="ques22">
+			
+			</div>
+		<p id='p1' class="c1"></p>
+		
+		<h2>Tow types of questions</h2>
+		<hr>
+		<h2>First: rondom questions</h2>
+			<div id="questiondiv">
+			
+			</div>
+		
+		<button onclick="result()">submit</button>
+		<div id="alert"></div>
+	
+		
+		
+		<script>
+		
+		
+function question(qnum,qtitle,option1,option2,option3,answernum)
+{
+	this.qnum=qnum;
+	this.qtitle=qtitle;
+	this.option1=option1;
+	this.option2=option2;
+	this.option3=option3;
+	this.answernum=answernum ;
+	
+	
+	
+}
+var q1=new question("q1","what is HTML?",'hyper text markup language','hyberid textcode language','hybernayte method language',1);
+var q2=new question("q2","what is css?",'hyper text markup language','cascade style sheet','hybernayte method language',2);
+var q3=new question("q3","Using Microsoft word we can simply ___?",'Paste picture','Type','All the above functions',3);
+var q4=new question("q4","The Binary Coded Decimal (BCD) uses?",'6 bits','8 bits','16 bits',1);
+var q5=new question("q5","Which of the following is billionth of a second?",'Microsecond','Nanosecond','Terabyte',2);
+var q6=new question("q6","The two kinds of main memory are?",'CDs and DVDs','RAM and ROM','Primary and secondary',2);
+var q7=new question("q7","RAM is also called as?",'Virtual memory','Volatile memory',' Non volatile memory',2);
+var q8=new question("q8","Internal hard disk is?",'Removable but not fixed','Removable','Fixed',3);
+var q9=new question("q9","The main memory of computer is also called as?",'Hard-disk','Primary storage','Secondary storage',2);
+var q10=new question("q10","CD-ROM stands for?",'Compact Data Read Only Memory','Compactable Read Only Memory','Compact Disc Read Only Memory',3);
+
+var q11=new question("q11","Which type of JavaScript language is ?",'Object-Oriented','Object-Based','Assembly-language',2);
+var q12=new question("q12","Which one of the following also known as Conditional Expression?",'Switch statement','If-then-else statement','immediate if',3);
+var q13=new question("q13"," In JavaScript, what is a block of statement?",'Conditional block','block that combines a number of statements into a single compound statement','both conditional block and a single statement',2);
+var q14=new question("q14","When interpreter encounters an empty statements, what it will do?",'Prompts to complete the statemen','Throws an error','Ignores the statements',3);
+var q15=new question("q15","The function and  var are known as?",'Keywords','Data types','Declaration statements',3);
+var q16=new question("q16","Which of the following variables takes precedence over the others if the names are the same?",'Global variable','The local element','The two of the above',2);
+var q17=new question("q17"," Which one of the following is the correct way for calling the JavaScript code?",'Function/Method','RMI','Triggering Event',1);
+var q18=new question("q18","Which of the following type of a variable is volatile?",'Mutable variable','Dynamic variable','Volatile variable',1);
+var q19=new question("q19","Which of the following option is used as hexadecimal literal beginning?",'0x','0X','Both 0x and 0X',3);
+var q20=new question("q20"," In the JavaScript, which one of the following is not considered as an error?",'Missing of semicolons','Division by zero','Missing of Bracket',2);
+
+var q21=new question("q21","what is HTML?",'hyper text markup language','hyberid textcode language','hybernayte method language',1);
+var q22=new question("q22","what is css?",'hyper text markup language','cascade style sheet','hybernayte method language',2);
+var q23=new question("q23","Using Microsoft word we can simply ___?",'Paste picture','Type','All the above functions',3);
+var q24=new question("q24","The Binary Coded Decimal (BCD) uses?",'6 bits','8 bits','16 bits',1);
+var q25=new question("q25","Which of the following is billionth of a second?",'Microsecond','Nanosecond','Terabyte',2);
+var q26=new question("q26","The two kinds of main memory are?",'CDs and DVDs','RAM and ROM','Primary and secondary',2);
+var q27=new question("q27","RAM is also called as?",'Virtual memory','Volatile memory',' Non volatile memory',2);
+var q28=new question("q28","Internal hard disk is?",'Removable but not fixed','Removable','Fixed',3);
+var q29=new question("q29","The main memory of computer is also called as?",'Hard-disk','Primary storage','Secondary storage',2);
+var q30=new question("q30","CD-ROM stands for?",'Compact Data Read Only Memory','Compactable Read Only Memory','Compact Disc Read Only Memory',3);
+
+var q31=new question("q31","Which type of JavaScript language is ?",'Object-Oriented','Object-Based','Assembly-language',2);
+var q32=new question("q32","Which one of the following also known as Conditional Expression?",'Switch statement','If-then-else statement','immediate if',3);
+var q33=new question("q33"," In JavaScript, what is a block of statement?",'Conditional block','block that combines a number of statements into a single compound statement','both conditional block and a single statement',2);
+var q34=new question("q34","When interpreter encounters an empty statements, what it will do?",'Prompts to complete the statemen','Throws an error','Ignores the statements',3);
+var q35=new question("q35","The function and  var are known as?",'Keywords','Data types','Declaration statements',3);
+var q36=new question("q36","Which of the following variables takes precedence over the others if the names are the same?",'Global variable','The local element','The two of the above',2);
+var q37=new question("q37"," Which one of the following is the correct way for calling the JavaScript code?",'Function/Method','RMI','Triggering Event',1);
+var q38=new question("q38","Which of the following type of a variable is volatile?",'Mutable variable','Dynamic variable','Volatile variable',1);
+var q39=new question("q39","Which of the following option is used as hexadecimal literal beginning?",'0x','0X','Both 0x and 0X',3);
+var q40=new question("q40"," In the JavaScript, which one of the following is not considered as an error?",'Missing of semicolons','Division by zero','Missing of Bracket',2);
+
+var q41=new question("q41","what is HTML?",'hyper text markup language','hyberid textcode language','hybernayte method language',1);
+var q42=new question("q42","what is css?",'hyper text markup language','cascade style sheet','hybernayte method language',2);
+var q43=new question("q43","Using Microsoft word we can simply ___?",'Paste picture','Type','All the above functions',3);
+var q44=new question("q44","The Binary Coded Decimal (BCD) uses?",'6 bits','8 bits','16 bits',1);
+var q45=new question("q45","Which of the following is billionth of a second?",'Microsecond','Nanosecond','Terabyte',2);
+var q46=new question("q46","The two kinds of main memory are?",'CDs and DVDs','RAM and ROM','Primary and secondary',2);
+var q47=new question("q47","RAM is also called as?",'Virtual memory','Volatile memory',' Non volatile memory',2);
+var q48=new question("q48","Internal hard disk is?",'Removable but not fixed','Removable','Fixed',3);
+var q49=new question("q49","The main memory of computer is also called as?",'Hard-disk','Primary storage','Secondary storage',2);
+var q50=new question("q50","CD-ROM stands for?",'Compact Data Read Only Memory','Compactable Read Only Memory','Compact Disc Read Only Memory',3);
+
+var arrq=[q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15,q16,q17,q18,q19,q20,q21,q22,q23,q24,q25,q26,q27,q28,q29,q30,q31,q32,q33,q34,q35,q36,q37,q38,q39,q40,q41,q42,q43,q44,q45,q46,q47,q48,q49,q50];
+
+var arr = [];
+while(arr.length < 10){
+    var r = Math.floor(Math.random() * 10) ;
+    if(arr.indexOf(r) === -1) arr.push(r);
+}
+
+for(y=0;y<arr.length;y++)
+{
+var x = arr[y];
+
+	document.getElementById('questiondiv').innerHTML+="<label><strong>"+arrq[x]['qnum']+" / random / : "+arrq[x]['qtitle']+"</strong></label><br><input type='radio' name="+arrq[x]['qnum']+" value="+arrq[x]['option1']+"></input>"+arrq[x]['option1']+"<br><input type='radio' name="+arrq[x]['qnum']+" value="+arrq[x]['option2']+"></input>"+arrq[x]['option2']+"<br>	<input type='radio' name="+arrq[x]['qnum']+" value="+arrq[x]['option3']+"></input>"+arrq[x]['option3']+"<br><br><br>				";
+	
+}
+document.getElementById('questiondiv').innerHTML+="<p><strong>"+"End Of Random Questions"+"</strong></label>"+"<hr>";
+document.getElementById('questiondiv').innerHTML+="<h2>"+"second : is normal Questions"+"</h2>";
+
+for(z=10;z<arrq.length;z++)
+{
+var x = z;
+
+	document.getElementById('questiondiv').innerHTML+="<label><strong>"+arrq[x]['qnum']+" : "+arrq[x]['qtitle']+"</strong></label><br><input type='radio' name="+arrq[x]['qnum']+" value="+arrq[x]['option1']+"></input>"+arrq[x]['option1']+"<br><input type='radio' name="+arrq[x]['qnum']+" value="+arrq[x]['option2']+"></input>"+arrq[x]['option2']+"<br>	<input type='radio' name="+arrq[x]['qnum']+" value="+arrq[x]['option3']+"></input>"+arrq[x]['option3']+"<br><br><br>				";
+
+	
+}
+
+function result()
+{
+		var trueq=0;
+		var falseq=0;
+		document.getElementById('alert').innerHTML="";
+	//اجابه الاسئله
+	for(x=0;x<arrq.length;x++)
+	{
+		if(useranswer(arrq[x]['qnum'])==arrq[x]['answernum'])
+		{
+		
+		trueq+=1;
+		
+		}
+		else{
+		falseq+=1;
+		
+		}
+		
+	}
+	
+	document.getElementById('alert').innerHTML+="true question = "+trueq;
+	document.getElementById('alert').innerHTML+="<br>false question = "+falseq;
+	document.getElementById('alert').innerHTML+="<br><h2>the correct ansours is:</h2><br>"
+	for(z=0;z<arrq.length;z++){
+      var w=arrq[z]['answernum'];
+	  if(w==1){
+	  var u =arrq[z]['option1'];
+	  }else if(w==2){
+	  var u =arrq[z]['option2'];
+	  }else if(w==3){
+	  var u =arrq[z]['option3'];
+	  }
+	document.getElementById('alert').innerHTML+="<br>"+arrq[z]['qnum']+" ansour is equal to : "+arrq[z]['answernum']+" = "+u;
+	
+
+	
+}
+}
+
+function useranswer(quest2)
+{
+	
+	let q=document.getElementsByName(quest2);
+	for(let x=0;x<q.length;x++)
+	{
+		if(q[x].checked==true)
+		{
+			return x+1;
+		}
+	}
+
+}
+
+
+
+</script>
+	</body>
+
+
+
+
+</html>
