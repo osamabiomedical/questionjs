@@ -147,23 +147,33 @@ function result()
 		}
 		
 	}
-	
+	var arry2_length =arry2.length;
+	var arry3_length =arry3.length;
 	document.getElementById('alert').innerHTML+="true question = "+trueq;
 	document.getElementById('alert').innerHTML+="<br>false question = "+falseq;
 	if(falseq>0){
 	  document.getElementById('alert').innerHTML+="<br><h2>false question is:</h2> ";
-	  }
-	  	for(z=0;z<arry2.length;z++){
+	  for(z=0;z<arry2_length;z++){
       
 	document.getElementById('alert').innerHTML+="<strong>("+arry2[z]+")</strong> AND ";
+	
 }
+		for(z=0;z<arry2_length;z++){
+		arry2.shift();
+	}
+	  }
+	  	
 	  if(trueq>0){
 	  document.getElementById('alert').innerHTML+="<br><h2>true question is:</h2> ";
-	  }
-	for(z=0;z<arry3.length;z++){
+	  for(z=0;z<arry3_length;z++){
       
 	document.getElementById('alert').innerHTML+="<strong>("+arry3[z]+")</strong> AND ";
-}
+	
+	  }
+	  for(z=0;z<arry3_length;z++){
+		arry3.shift();
+	}
+	}
 	
 	document.getElementById('alert').innerHTML+="<br><h2>the all correct ansours is:</h2><br>"
 	for(z=0;z<arrq.length;z++){
